@@ -1,0 +1,39 @@
+{
+  "id": "nested-entity-three-levels",
+  "subEntities": [
+    {
+      "id": "sub-entity-1",
+      "subEntities": [{
+        "id": "sub-entity-1-1",
+        "subEntities": [],
+        "data": {
+          "name": "Matus",
+          "email": "matus@example.com"
+        }
+      }],
+      "data": {
+        "name": "Matus",
+        "email": "matus@example.com"
+      }
+    },
+    {
+      "id": "sub-entity-2",
+      "subEntities": [{
+        "id": "sub-entity-2-1",
+        "subEntities": [],
+        "data": {
+          "name": "Matus",
+          "email": "matus@example.com"
+        }
+      }],
+      "data": {
+        "name": "Matus",
+        "email": "matus@example.com"
+      }
+    }
+  ],
+  "data": {
+    "name": "Matus",
+    "email": "matus@example.com"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "123412341",
+  "subEntities": [],
+  "data": {
+    "name": "Matus",
+    "email": "matus@example.com",
+    "rating": 5
+  }
+}

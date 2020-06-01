@@ -1,0 +1,25 @@
+{
+  "id": "nested-entity-two-levels",
+  "subEntities": [
+    {
+      "id": "sub-entity-1",
+      "subEntities": [],
+      "data": {
+        "name": "Matus",
+        "email": "matus@example.com"
+      }
+    },
+    {
+      "id": "sub-entity-2",
+      "subEntities": [],
+      "data": {
+        "name": "Matus",
+        "email": "matus@example.com"
+      }
+    }
+  ],
+  "data": {
+    "name": "Matus",
+    "email": "matus@example.com"
+  }
+}
