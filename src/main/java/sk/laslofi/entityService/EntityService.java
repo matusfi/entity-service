@@ -15,13 +15,20 @@ public class EntityService {
 
     private final Map<String,Entity> rootEntities = new HashMap<>();
 
-    //    - list Entity entries
+    /**
+     * List all entities
+     * @return a collection of entities
+     */
     @RequestMapping("/entities")
     public Collection<Entity> getEntityList() {
         return rootEntities.values();
     }
 
-    //    - send an Entity (to root, or attached to another entity)
+    /**
+     * Add an entity
+     * @param entityMap JSON request body parsed as a String->Object map
+     * @return the added entity or null in case of error
+     */
     @RequestMapping(value = "/entities", method = RequestMethod.POST)
     public Entity addEntity(final Map<String, Object> entityMap) {
         try {
@@ -35,7 +42,11 @@ public class EntityService {
         }
     }
 
-    //    - read an Entity
+    /**
+     * Return an entity by its ID
+     * @param id of the root entity to be retrieved
+     * @return the requested entity or null if not found
+     */
     @RequestMapping("/entities/{id}")
     public Entity readEntity(@PathVariable("id") String id) {
         return rootEntities.get(id);
